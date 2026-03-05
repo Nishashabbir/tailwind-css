@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient text </title>
+    <link rel="stylesheet" href="./static/css/output.css">
+</head>
+<body>
+    <!-- now applying the gradient to the text , here is the techinique  -->
+     <!-- Text normally has a color.
+
+When you apply a gradient, you’re applying a background, not a text color.
+So the trick is:
+Put the gradient on the background.
+Make the text transparent.
+Clip the background so it only shows inside the text shape.
+It’s basically a visual illusion. -->
+
+<!-- 
+Step 1 — Apply a Gradient Background
+<h1 class="bg-gradient-to-r from-blue-500 to-purple-600">
+  Hello
+</h1>
+Right now:
+The entire <h1> box has a gradient.
+The text is still black.
+You just see black text over a gradient block.
+
+
+Step 2 — Make the Text Transparent
+<h1 class="bg-gradient-to-r from-blue-500 to-purple-600 text-transparent">
+  Hello
+</h1>
+Now:
+The text has no color.
+But you still won’t see gradient text.
+Why? Because the gradient is still applied to the whole box.
+
+
+Step 3 — Clip the Background to the Text
+<h1 class="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+  Hello
+</h1>
+Now:
+The gradient exists in the background.
+bg-clip-text tells the browser:
+“Only show the background where the text exists.”
+Since the text is transparent, the gradient becomes visible through it.
+That’s the magic. -->
+
+<!-- What’s Happening Under the Hood?;
+  background: linear-gradient(to right, blue, purple);
+-webkit-background-clip: text;
+color: transparent; -->
+
+<!-- this is linear gradient property  -->
+<div class="bg-gradient-to-r from-pink-400 via-orange-500    to-purple-500 bg-clip-text text-transparent font-extrabold text-3xl">Nisha Shabbir Anjum </div>
+    
+<!-- radial gradient starts from the center and spreads outwards  like here center has light pink while the corners have dark  -->
+<div class="bg-radial from-pink-200  to-pink-400 h-40 min-h-screen   "> </div>
+<div class="bg-radial from-pink-200  to-pink-400  bg-clip-text text-transparent font-extrabold text-3xl">MY NAME IS NISHA </div>
+
+<!-- border gradient  -->
+<!-- by giving padding in minus and creating a div in center you can make the border gradient as well  -->
+<div class="p-[2px] bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg">
+  <div class="bg-white rounded-lg p-6  ">
+    Gradient Border
+  </div>  
+</div>
+
+<!-- text over images  -->
+<div class="h-190 bg-[linear-gradient(to_top,rgba(0,0,0,0.7),transparent)], bg-[url('https://www.mamp.one/wp-content/uploads/2024/09/image-resources2.jpg')] bg-cover bg-center">
+MY NAME IS NISHA SHABBIR ANJUM 
+
+</div>
+
+<!-- you can write the color codes like this  -->
+<button class="bg-[#316ff6] ...">
+  Sign in with Facebook
+</button>
+
+</body>
+</html>

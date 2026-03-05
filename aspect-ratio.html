@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect ratio</title>
+    <link rel="stylesheet" href="./static/css/output.css">
+</head>
+<body>
+
+    <!-- aspect ration is basically the relation between the width and height  -->
+<!-- in the image card use img tag and in the video tag use iframe emebeded code copied from youtube  -->
+
+    <!-- image card  -->
+    <div class="max-w-sm rounded-xl overflow-hidden shadow-lg bg-white">
+  
+  <!-- Image Wrapper -->
+  <div class="aspect-3/2">
+    <img 
+      src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+      class="w-full h-full object-cover"
+      alt="Nature"
+    />
+  </div>
+
+  <!-- Content -->
+  <div class="p-4">
+    <h2 class="text-lg font-semibold">Mountain View</h2>
+    <p class="text-gray-600 text-sm mt-2">
+      A peaceful mountain landscape captured during sunset.
+    </p>
+  </div>
+
+</div>
+
+
+
+<!-- video card here  -->
+<div class="max-w-sm rounded-xl overflow-hidden shadow-lg bg-white">
+  
+  <!-- Video Wrapper -->
+  <div class="aspect-video">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/rDn0kRoK0Mo?si=jMsm61d3G47iBqku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <!-- Content -->
+  <div class="p-4">
+    <h2 class="text-lg font-semibold">Featured Video</h2>
+    <p class="text-gray-600 text-sm mt-2">
+      Watch this beautiful cinematic footage in 16:9 format.
+    </p>
+  </div>
+
+</div>
+
+
+<!-- column count with aspect ratio   -->
+
+<div class="columns-3 gap-4 p-6">
+  
+  <img class="aspect-3/2 w-full object-cover mb-4 rounded-lg"
+       src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" />
+
+  <img class="aspect-square w-full object-cover mb-4 rounded-lg"
+       src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" />
+
+  <img class="aspect-square w-full object-cover mb-4 rounded-lg"
+       src="https://images.unsplash.com/photo-1493244040629-496f6d136cc3" />
+
+  <img class="aspect-3/2 w-full object-cover mb-4 rounded-lg"
+       src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" />
+
+</div>
+    
+
+<!-- columns break  -->
+ <!-- not the default but , if you want to break the column after a particular element then we can use break-after-column class in that element  --> 
+
+ <!-- without the break (default columns behaviour )  -->
+<div class="columns-2">
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+  <p >Paragraph 3</p>
+  <p>Paragraph 4</p>
+  <p>Paragraph 5</p>
+  <p>Paragraph 6</p>
+  <p>Paragraph 7</p>
+</div>
+
+<!-- with break we can simply just tell the browser to break the column after a particular element  --> 
+
+<div class="columns-2">
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+  <p class="break-after-column">Paragraph 3</p>
+  <p>Paragraph 4</p>
+  <p>Paragraph 5</p>
+  <p>Paragraph 6</p>
+  <p>Paragraph 7</p>
+</div>
+
+
+<!-- break inside an element  , it is used   when we have a long element and we dont want it to break in the middle of the element for example : we have a long paragraph and we dont want it to break in the middle of the paragraph so we can use break-inside-column class in that element  -->
+<div class="columns-2">
+  <p>Paragraph 1 </p>
+  <p>Paragraph 2 </p>
+  <p class="break-inside-column">Paragraph 3</p>
+  <p>Paragraph 4</p>
+  <p>Paragraph 5</p>
+  <p>Paragraph 6</p>
+  <p>Paragraph 7</p>
+</div>
+
+
+
+</body>
+</html>

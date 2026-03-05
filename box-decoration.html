@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box decoration breaks </title>
+    <link rel="stylesheet" href="./static/css/output.css">
+</head>
+<body>
+    <span class="bg-gradient-to-r from-indigo-600 to-pink-500 px-2 text-white text-5xl box-decoration-clone ">
+  Hello<br />World
+</span>
+
+  <div class="bg-gradient-to-r from-indigo-600 to-pink-500 px-2 text-white text-5xl box-decoration-slice mt-5 ">
+  Hello<br />World
+</div>
+
+
+<!-- Responsive design
+Prefix a box-decoration-break utility with a breakpoint variant like md: to only apply the utility at medium screen sizes and above: -->
+
+<div class=" bg-gradient-to-r from-indigo-600 to-pink-500 px-2 text-white text-5xl box-decoration-slice md:box-decoration-clone  mt-5 ">
+    Hello<br />World
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object position </title>
+    <link rel="stylesheet" href="./static/css/output.css">
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-10 space-y-10 bg-gray-100">
+
+<h1 class="text-2xl font-bold">Object Fit Comparison</h1>
+
+<div class="grid grid-cols-3 gap-6">
+
+  <!-- object-cover -->
+  <div class="bg-white p-3 shadow">
+    <p class="font-semibold mb-2">object-cover</p>
+    <div class="w-64 h-40 border">
+      <img
+        src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=90"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+
+  <!-- object-contain -->
+  <div class="bg-white p-3 shadow">
+    <p class="font-semibold mb-2">object-contain</p>
+    <div class="w-64 h-40 border">
+      <img
+        src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=90"
+        class="w-full h-full object-contain"
+      />
+    </div>
+  </div>
+
+  <!-- object-fill -->
+  <div class="bg-white p-3 shadow">
+    <p class="font-semibold mb-2">object-fill</p>
+    <div class="w-64 h-40 border">
+      <img
+        src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=90"
+        class="w-full h-full object-fill"
+      />
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!-- object position is used to control the position of an image within its container when the image is larger than the container. It allows you to specify how the image should be positioned within the container, such as centered, top-left, top-right, bottom-left, or bottom-right. This can be useful for ensuring that important parts of the image are visible and not cropped out when using object-fit properties like object-cover or object-contain.
+  -->
+
+
+  <h1 class="text-2xl font-bold">Object Position Demo</h1>
+
+<div class="grid grid-cols-3 gap-6">
+
+<!-- top -->
+<div>
+<p class="font-semibold mb-2">object-top</p>
+<div class="w-64 h-40 border">
+<img
+src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=90"
+class="w-full h-full object-cover object-top">
+</div>
+</div>
+
+<!-- center -->
+<div>
+<p class="font-semibold mb-2">object-center</p>
+<div class="w-64 h-40 border">
+<img
+src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=90"
+class="w-full h-full object-cover object-center">
+</div>
+</div>
+
+<!-- bottom -->
+<div>
+<p class="font-semibold mb-2">object-bottom</p>
+<div class="w-64 h-40 border">
+<img
+src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=90"
+class="w-full h-full object-cover object-bottom">
+</div>
+</div>
+
+</div>
+
+<!-- you can also use object-left, object-right, object-top-left, object-top-right, object-bottom-left, and object-bottom-right to control the position of the image within its container. This allows you to ensure that specific parts of the image are visible and not cropped out when using object-fit properties. -->
+<!-- you can also use overflow properties like this : -->
+<!-- overflow hidden , scroll , auto , visible , clip , y-hidden , x-visible , y-visible , etc  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200 flex items-center justify-center h-screen">
+
+<div class="relative w-[600px] bg-gray-100 rounded-xl shadow-md p-6 pl-28">
+
+    <!-- Avatar -->
+    <img
+    src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80"
+    class="absolute -left-12 top-1/2 -translate-y-1/2 w-24 h-24 rounded-full shadow-lg border-4 border-white object-cover">
+
+    <!-- Text -->
+    <div>
+        <h1 class="text-xl font-semibold text-gray-800">
+            Andrew Alfred
+        </h1>
+
+        <p class="text-gray-500 text-lg">
+            Technical advisor
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/css/output.css">
+</head>
+<body>
+
+    <!-- min-h-* = “What’s the minimum floor for this element’s height?”
+full → parent’s height
+screen → viewport height
+Anything above the floor grows naturally. -->
+
+    <div class="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-400 to-pink-500">
+        <h1 class="text-white text-4xl">Welcome!</h1>
+    </div>
+    <div class="h-64 bg-gray-200">
+  <div class="min-h-full bg-blue-400">
+    Fills the parent div’s height
+  </div>
+</div>
+    
+<div class="min-h-0 bg-blue-200">
+  Tiny content → div shrinks 
+</div>
+
+<div class="min-h-screen bg-green-300">
+  This div always fills the full viewport height.
+</div>
+
+
+<!-- in short once again  -->
+<div class="min-h-screen bg-amber-700"> Full view port </div>
+
+<div class="min-h-full bg-blue-500"> it gets parent hieght so here it won't be showing up until you writ it in a parent </div>
+
+<!-- like this  -->
+ <div class="container h-50 w-200 ">
+    <div class="min-h-full bg-purple-500"></div>
+ </div>
+
+
+</body>
+</html>

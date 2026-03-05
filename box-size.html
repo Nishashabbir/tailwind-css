@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-size</title>
+    <link rel="stylesheet" href="./static/css/output.css">
+</head>
+<body>
+ <div class="flex gap-10 p-10 bg-gray-100">
+<!-- look the utilities are almost same but applying the properties of border we get the difference of width or the space of the box  -->
+ 
+
+<!-- BORDER-BOX -->
+ <!-- content + padding + border = 16rem
+Padding and border are INCLUDED inside the 16rem.
+It does NOT grow. -->
+  <div class="box-border w-64 p-6 border-8 border-blue-500 bg-blue-200">
+    <p class="font-semibold">box-border</p>
+    <p class="text-sm">Width stays exactly 16rem</p>
+  </div>
+
+  <!-- CONTENT-BOX -->
+   <!-- Width = 16rem ONLY FOR CONTENT
+Padding and border are added outside.
+So actual width becomes:
+16rem + padding + border
+So this box becomes wider than the blue one. -->
+  <div class="box-content w-64 p-6 border-8 border-pink-500 bg-pink-200">
+    <p class="font-semibold">box-content</p>
+    <p class="text-sm">Width becomes bigger than 16rem</p>
+  </div>
+
+  <!-- box-border
+Width = Everything
+box-content
+Width = Content only -->
+
+<!-- display utilities  -->
+
+<p>
+  When controlling the flow of text, using the CSS property <span class="inline">display: inline</span> will cause the
+  text inside the element to wrap normally.
+</p>
+<p>
+  While using the property <span class="inline-block">display: inline-block</span> will wrap the element to prevent the
+  text inside from extending beyond its parent.
+</p>
+<p>
+  Lastly, using the property <span class="block">display: block</span> will put the element on its own line and fill its
+  parent.
+</p>
+</div>
+
+
+<div class="p-4">
+  <div class="flow-root ...">
+    <div class="my-4 ...">Well, let me tell you something, ...</div>
+  </div>
+  <div class="flow-root ...">
+    <div class="my-4 ...">Sure, go ahead, laugh if you want...</div>
+  </div>
+</div>
+</body>
+</html>

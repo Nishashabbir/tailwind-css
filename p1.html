@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+    <link rel="stylesheet" href="./static/css/output.css">
+</head>
+<body>
+    <!-- https://tailwindcss.com/docs/break -->
+    
+    <nav class="" >
+        <ul class="flex justify-evenly" >
+            <li>Home </li>
+            <li>About </li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+   
+    <div class="right">    <h1 class=" mx-86 font-semibold text-purple-700 text-9xl mt-50"> I am Nisha </h1>
+        <p class="text-8xl ml-80">scroll down </p>
+    <div class="container flex">
+        <!-- only border would mean 1px  -->
+<div class="box rounded-t-2xl border  border-dashed border-amber-400 w-30 h-30 m-20 ">rounded top </div>
+<div class="box rounded-l-4xl border-3 border-solid border-green-400 w-30 h-30 m-20">rounded left </div>
+<div class="box rounded-b-4xl border-4 border-double border-red-400 w-30 h-30 m-20">rounded bottom</div>
+<div class="box rounded-r-3xl border-2 border-dotted border-blue-400 w-30 h-30 m-20">rounded right </div>
+</div>
+    <div class=" flex">
+        <!-- border x-2 means broder right width is 2 while left is 0  -->
+<div class="box rounded-t-2xl border-4 divide-x-2  border-dashed border-amber-400 w-30 h-30 m-20 ">rounded top </div>
+<div class="box rounded-l-4xl border-3  divide-y-8 border-solid border-green-400 w-30 h-30 m-20">rounded left </div>
+<div class="box rounded-b-4xl border-4 divide-y-8 border-double border-red-400 w-30 h-30 m-20">rounded bottom</div>
+<div class="box rounded-r-3xl border-2 divide-y-8 border-dotted border-blue-400 w-30 h-30 m-20">rounded right </div>
+</div>
+
+<div class="columns-2">
+  <p >Well, let me tell you something, ...</p>
+  <p class="break-after-column">Sure, go ahead, laugh...</p>
+  <p>Maybe we can live without...</p>
+  <p>Look. If you think this is...</p>
+</div>
+</body>
+</html

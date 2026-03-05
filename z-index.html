@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>z-index </title>
+</head>
+
+<!-- z-index is a CSS property that controls the stacking order of elements on a web page. Elements with a higher z-index value will be displayed in front of elements with a lower z-index value. In this example, we have three overlapping divs with different background colors and z-index values. The blue div has a z-index of 10, the red div has a z-index of 20, and the green div has a z-index of 0. As a result, the red div will be displayed in front of the blue div, and the green div will be displayed behind both the blue and red divs.
+ higher the index topper the element will be  -->
+<body class="flex justify-center items-center h-screen bg-gray-100">
+ <div class="relative w-40 h-40">
+  <div class="absolute top-0 left-0 w-32 h-32 bg-blue-500 z-10"></div>
+  <div class="absolute top-4 left-4 w-32 h-32 bg-red-500 z-20"></div>
+  <div class="absolute top-8 left-8 w-32 h-32 bg-green-500 z-0"></div>
+</div>
+
+</div>
+</div>
+</body>
+</html>

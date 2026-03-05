@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="./static/css/output.css">
+</head>
+<body>
+    <!-- flex -->
+    <div class="flex">
+        <div class="flex-1 bg-blue-500">Item 1</div>
+        <div class="flex-1 bg-green-400">Item 2</div>
+        <div class="flex-1 bg-yellow-500">Item 3</div>
+    </div>
+
+<!-- grid  -->
+ <!-- To visually hide an element but keep it in the document, use the visibility property instead. -->
+ <div class="grid grid-cols-4 mt-10">
+    <div class="grid-1 bg-amber-300 p-4">grid 1 </div>
+    <div class="grid-1 bg-amber-400 p-4 hidden"> grid 2 </div> 
+    <!-- grid 2 will be hidden  -->
+    <div class="grid-1 bg-amber-500 p-4">grid 3</div>
+    <!-- hide the element visually but not for the screen readers  -->
+    <div class="grid-1 bg-amber-600 p-4 sr-only sm:not-sr-only">grid 4</div>
+    <div class="grid-1 bg-amber-700 p-4">grid 5</div>
+ </div>
+
+
+
+
+    <!-- inline grid  -->
+<p>
+  Today I spent most of the day researching ways to ...
+  <span class="inline-flex items-baseline">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpjRkfdV2CW7Sg2sT7e3zRmUyUUIOh5IW0bw&s" class="mx-1 w-10 h-10 self-center rounded-full" />
+    <span>Kramer</span>
+  </span>
+  keeps telling me there is no way to make it work, that ...
+</p>
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> states on Button  </title>
+    <link rel="stylesheet" href="./static/css/output.css">
+</head>
+<body>
+    <!--first  button with two hover properties  with transition applied  -->
+  <!-- second button with focus , on focus remove the browser's default outline and add yours , glowing ring outline applying color  -->
+
+
+ <div class="min-h-screen flex flex-col items-center justify-center gap-6 bg-gray-100">
+ <button  class="w-40 h-20 border rounded-2xl p-3 bg-sky-500 text-white outline-indigo-400 hover:bg-amber-400 hover:scale-120 transition ">HOVER ME ! </button>
+ <button  class="w-40 h-20 border rounded-2xl p-3 bg-sky-500 text-white  hover:ring-4 hover:ring-pink-400 hover:scale-120 transition ">HOVER ME ! </button>
+ <button class="w-40 h-20  rounded-2xl p-3 bg-sky-500 text-white    focus:outline-2 focus:ring-4 focus:ring-pink-500 hover:scale-120 transition ">Click me to focus ! </button>
+ <button class="w-40 h-20 border rounded-2xl p-3 bg-sky-500 text-white outline-indigo-400  active:bg-red-500 active:scale-120 transition ">Click me and hold! I am Active  </button>
+
+
+
+</div>   
+</body>
+</html>
